@@ -1,0 +1,36 @@
+body{
+  background-color: #000000;
+  font: italic bold normal 14px sans-serif;
+}
+
+h1{
+  font-size: 100px;
+  color: rgb(142, 22, 14);
+  text-shadow: 4px 4px;
+}
+
+h2{
+  background-color: rgba(43, 121, 58, 0.8);
+  font-size: 4em;
+}
+
+li.descendant{
+  color: darkorange;
+}
+
+h1, h2{
+  border: red 2px solid;
+}
+
+aside>p{
+  font-size: 20px;;
+}
+
+a:hover{
+  color: green;
+}
+
+a:focus{
+  background-color: purple;
+}
+
