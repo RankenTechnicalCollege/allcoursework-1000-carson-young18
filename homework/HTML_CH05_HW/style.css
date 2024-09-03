@@ -1,5 +1,6 @@
 #wrapper{
-  margin: 1em, auto;
+  margin: 10px auto;
+  padding: 1px;
   width: 1000px;
 }
 
@@ -22,6 +23,36 @@
 }
 
 header, main, footer, nav{
-  border: 1px, red solid;
+  border: 1px red solid;
   padding: 10px;
+  margin: 10px auto;
+}
+
+h1, h2, h3{
+  border-bottom: 10px dashed purple;
+}
+
+header{
+  background-image: linear-gradient(to right, blue 0%, white 100%);
+}
+
+h1{
+  margin: 7px auto;
+  padding: 15px;
+}
+
+body{
+  background-image: linear-gradient(to bottom, white 0%, red 100%);
+}
+
+p{
+  margin: 5px auto;
+  padding: 7px;
+  height: auto;
+  width: 600px;
+}
+
+img{
+  margin: 15px auto;
+  padding: 20px;
 }
