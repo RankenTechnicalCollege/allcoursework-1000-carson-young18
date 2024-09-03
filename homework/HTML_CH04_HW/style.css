@@ -9,13 +9,17 @@ h1{
   text-shadow: 4px 4px;
 }
 
+li{
+  background-color:aqua
+}
+
 h2{
   background-color: rgba(43, 121, 58, 0.8);
   font-size: 4em;
 }
 
 li.descendant{
-  color: darkorange;
+  background-color: darkorange;
 }
 
 h1, h2{
