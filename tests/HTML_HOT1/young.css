@@ -1,0 +1,15 @@
+#wrapper{
+  margin: 10px auto;
+  background-color: #d9d8d2;
+  width: 1000px;
+}
+
+body{
+  background-color: #f2f2e9;
+  color: #0d0d0d;
+}
+
+footer{
+  padding: 20px;
+  border-top: #8c8b88 5px solid;
+}
