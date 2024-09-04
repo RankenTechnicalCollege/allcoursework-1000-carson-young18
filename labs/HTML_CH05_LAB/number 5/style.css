@@ -1,0 +1,11 @@
+body{
+  background-image: url(background.jpeg);
+  background-repeat: repeat-x;
+}
+
+#wrapper{
+  background-color: gray;
+  margin: 10px auto;
+  width: 1000px;
+  padding: 20px;
+}

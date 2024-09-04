@@ -1,0 +1,33 @@
+footer{
+  background-color: lightblue;
+  font-family: Arial;
+  color: darkblue;
+  padding: 10px;
+  border: 1px dashed darkblue;
+}
+
+#notice{
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.headline{
+  border: 3px solid maroon;
+  color: maroon;
+}
+
+h1{
+  background-color: rgba(130, 123, 123, 0.5);
+  font-size: 4em;
+  font-family: sans-serif;
+  text-shadow: 3px 3px;
+}
+
+#feature{
+  font: small Arial;
+  color: red;
+  background-color: white;
+  width: 80%;
+  text-shadow: 1px 1px;
+}
