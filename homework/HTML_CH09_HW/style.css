@@ -1,0 +1,28 @@
+nav{
+  display: flex;
+  flex-basis: 100%;
+}
+
+nav a{
+  /*Button CSS*/
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /*Flexbox CSS*/
+  flex-basis: 20%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media only screen and (max-width:1000px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
