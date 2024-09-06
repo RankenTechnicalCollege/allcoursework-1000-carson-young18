@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo-name, nav, aside, .content, .words, .grid, footer{
+  border: 1px red solid;
+}
+
+body{
+  width:90%;
+  margin: 0 auto;
+}
+
+header, nav, .content, aside, main, footer{
+  padding: 10px 0;
+  margin: 2 auto;
+}
+
+.logo-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px auto;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.name{
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  font-size: 1.4em;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-basis: 20%;
+}
+
+.nav-link a{
+  font-size: 1.2em;
+  text-align: center;
+  width: 40%;
+  text-decoration: none;
+  background-color: rgb(73, 220, 137);
+  color: white;
+  padding: 5px 30%;
+}
+
+@media only screen and (min-width:600px){
+
+}
+
+@media only screen and (min-width:1200px){
+  .logo-name{
+    justify-content: flex-start;
+  }
+
+  nav{
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width:2500px){
+  
+}
+
