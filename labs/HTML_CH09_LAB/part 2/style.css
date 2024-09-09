@@ -3,13 +3,21 @@
   padding: 0;
 }
 
-.logo-name, nav, aside, .content, .words, .grid, footer{
+aside, .content, .words, .grid, footer{
   border: 1px red solid;
 }
 
 body{
   width:90%;
   margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+main{
+  display: flex;
+  flex-grow: 1;
 }
 
 header, nav, .content, aside, main, footer{
@@ -23,6 +31,7 @@ header, nav, .content, aside, main, footer{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-basis: 100%;
   margin: 5px auto;
 }
 
@@ -39,13 +48,15 @@ header, nav, .content, aside, main, footer{
   font-size: 1.4em;
 }
 
-nav{
+/* nav{
   display: flex;
   flex-direction: column;
-}
+} */
 
 nav ul{
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-link{
@@ -65,6 +76,15 @@ nav ul{
   padding: 5px 30%;
 }
 
+.words p{
+  margin: 10px auto;
+}
+
+.grid img{
+  width: 100px;
+  height: 100px;
+}
+
 @media only screen and (min-width:600px){
 
 }
@@ -74,7 +94,8 @@ nav ul{
     justify-content: flex-start;
   }
 
-  nav{
+  nav ul{
+    display: flex;
     flex-direction: row;
   }
 }
