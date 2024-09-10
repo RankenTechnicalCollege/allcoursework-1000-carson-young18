@@ -93,7 +93,7 @@ main{
 .home{
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 
 .education{
@@ -130,14 +130,49 @@ footer ul{
 }
 
 /* Media queries */
-@media only screen and(max-width:600px){
+@media only screen and (max-width:600px){
   nav{
-    background-color: yellow;
-    display: flex;
-    order: 1;
+    order: 0;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
   }
 
   .head{
-    order:2;
+    order:1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  .education{
+    flex-direction: column;
+  }
+
+  .education-text{
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:600px) and (max-width:900px){
+  body{
+    background-color: lightslategrey;
+  }
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px) {
+  body{
+    background-color: lightcoral;
+  }
+}
+
+@media only screen and (min-width:2500px) {
+  body{
+    background-color: lemonchiffon;
   }
 }
