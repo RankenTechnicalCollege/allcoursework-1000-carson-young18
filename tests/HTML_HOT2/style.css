@@ -1,0 +1,67 @@
+header{
+  background-color: lightblue;
+  color: black;
+}
+
+header a{
+  color: black;
+}
+
+.jumbo{
+  width: 100%;
+  height: 20vh;
+  background: url(images/background.jpg) no-repeat center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.jumbo a{
+  color: white;
+}
+
+.jumbo-text{
+  width: 20%;
+  margin: 5px;
+  background-color: black;
+}
+
+.menu{
+  background-color: yellowgreen;
+}
+
+.item1, .item2, .item3, .item4, .item5{
+  width: 99%;
+  margin: 2px auto;
+}
+
+.item1{
+  background-color: lightblue;
+}
+.item2{
+  background-color: darkolivegreen;
+  color: white;
+}
+.item3{
+  background-color:lavender;
+}
+.item4{
+  background-color: aquamarine;
+}
+.item5{
+  background-color: yellow;
+}
+
+.map{
+  background-color: navy;
+  color: white;
+}
+
+iframe{
+  border: 0;
+}
+
+footer{
+  text-align: center;
+  background-color: darkgreen;
+  color: white;
+}
