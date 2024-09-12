@@ -1,3 +1,22 @@
-.navbar-brand img{
-  width: 60px;
+/* LOGO COLOR #0302F3 */
+
+.navbar{
+  background-color: lightgrey;
+}
+
+footer{
+  background-color: darkgray;
+}
+
+main{
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: #0302F3;
+}
+
+.donate-btn{
+  background-color: #0302F3 !important;
 }
