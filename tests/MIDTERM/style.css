@@ -18,14 +18,22 @@ a{
 }
 
 .jumbotron{
-  background-color: yellow;
-  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(midterm_images/ctc_raffle_basket_winner.jpg);
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  color: white;
 }
 
 .merriweather-regular {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.home-cards{
+  height: 100%;
 }
 
 @media (max-width:500px) {
