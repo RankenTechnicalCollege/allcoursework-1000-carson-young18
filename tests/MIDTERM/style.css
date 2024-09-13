@@ -8,15 +8,28 @@ footer{
   background-color: darkgray;
 }
 
-main{
-  height: 100vh;
-}
-
 a{
   text-decoration: none;
   color: #0302F3;
 }
 
-.donate-btn{
+.btn{
   background-color: #0302F3 !important;
+}
+
+.jumbotron{
+  background-color: yellow;
+  height: 70vh;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width:500px) {
+  .navbar-brand h1{
+    display: none;
+  }
 }
