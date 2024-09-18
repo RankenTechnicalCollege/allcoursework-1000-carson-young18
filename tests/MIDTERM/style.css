@@ -55,6 +55,15 @@ a{
 
 .home-cards{
   height: 100%;
+  flex-basis: 60%;
+}
+
+#home-carousel{
+  flex-basis: 40%;
+}
+
+.carousel-item{
+  max-height: 100%;
 }
 
 .contact-logo{
@@ -69,15 +78,6 @@ a{
   height: 30%;
   width: 30%;
   margin: 5px;
-}
-
-.gallery-hover img{
-  display: block;
-}
-
-.hover-text{
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 
 .calendar{
