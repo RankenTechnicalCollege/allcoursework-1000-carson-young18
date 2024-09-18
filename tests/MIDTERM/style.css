@@ -1,4 +1,11 @@
 /* LOGO COLOR #0302F3 */
+main{
+  min-height: 90vh;
+}
+
+footer{
+  min-height: 10vh;
+}
 
 .navbar{
   background-color: lightgrey;
@@ -28,7 +35,7 @@ a{
 }
 
 .home-jumbotron{
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(midterm_images/ctc_raffle_basket_winner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/ctc_raffle_basket_winner.jpg);
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +63,29 @@ a{
 
 .contact-text{
   flex-basis: 70%;
+}
+
+.gallery-images img{
+  height: 30%;
+  width: 30%;
+  margin: 5px;
+}
+
+.gallery-hover img{
+  display: block;
+}
+
+.hover-text{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.calendar{
+  flex-basis: 70%;
+}
+
+.calendar-text{
+  flex-basis: 30%;
 }
 
 @media (max-width:500px) {
