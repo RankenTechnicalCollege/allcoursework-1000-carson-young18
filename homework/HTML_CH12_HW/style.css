@@ -1,0 +1,28 @@
+table, th, td{
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+thead, tfoot{
+  background-color: yellow;
+  text-align: left;
+}
+
+tfoot{
+  text-align: ri;
+}
+
+tr:nth-child(even){
+  background-color: yellow;
+}
+
+.years{
+  text-align: right;
+}
+
+.dep{
+  vertical-align: top;
+  background-color: white;
+}
+
