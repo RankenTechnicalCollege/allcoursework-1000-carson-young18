@@ -4,13 +4,17 @@ table, th, td{
   padding: 5px 10px;
 }
 
+table{
+  margin: 0 auto;
+}
+
 thead, tfoot{
   background-color: yellow;
   text-align: left;
 }
 
 tfoot{
-  text-align: ri;
+  text-align: right;
 }
 
 tr:nth-child(even){
@@ -26,3 +30,10 @@ tr:nth-child(even){
   background-color: white;
 }
 
+figure{
+  margin: 20 auto;
+}
+
+figcaption{
+  text-align: center;
+}
