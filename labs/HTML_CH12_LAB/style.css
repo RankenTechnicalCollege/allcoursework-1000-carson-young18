@@ -23,6 +23,14 @@ nav a:hover{
   color: lightgrey !important;
 }
 
+.pages-nav{
+  height: 12vh;
+}
+
+.nav-spacer{
+  height: 12vh;
+}
+
 .home-contact-btn{
   border: 2px white solid;
 }
