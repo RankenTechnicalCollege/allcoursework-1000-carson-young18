@@ -1,0 +1,46 @@
+.home-page{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/pexels-pixabay-532173.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#home-name{
+  color: white !important;
+}
+
+#pages-name{
+  color: black !important;
+}
+
+nav a:hover{
+  color: lightgrey !important;
+}
+
+.home-contact-btn{
+  border: 2px white solid;
+}
+
+.home-contact-btn:hover{
+  background-color: white;
+  color: black !important;
+}
+
+.pages-contact-btn{
+  border: 2px black solid;
+}
+
+.pages-contact-btn:hover{
+  background-color: black;
+  color: white !important;
+}
+
+li{
+  margin: 0px 10px;
+}
