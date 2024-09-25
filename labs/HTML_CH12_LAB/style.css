@@ -1,3 +1,11 @@
+body{
+  background-color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
 .home-page{
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/pexels-pixabay-532173.jpg);
   background-position: 50% 50%;
@@ -7,6 +15,20 @@
 
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.allison-regular {
+  font-family: "Allison", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8em;
+}
+
+.quicksand-text {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -49,6 +71,11 @@ nav a:hover{
   color: white !important;
 }
 
-li{
+nav li{
   margin: 0px 10px;
+}
+
+.resume-jumbotron{
+  height: 40vh;
+  background-color: grey;
 }

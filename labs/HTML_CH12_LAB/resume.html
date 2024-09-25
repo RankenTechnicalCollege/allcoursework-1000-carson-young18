@@ -7,13 +7,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=Quicksand&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5666af96e4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <title>Carson Young</title>
 </head>
 <body>
   <header>
+    <div class="nav-spacer"></div>
     <nav class="navbar navbar-expand-lg fixed-top bg-dark">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
@@ -38,7 +40,7 @@
               <a href="about.html" class="nav-link text-light">About Me</a>
             </li>
             <li class="nav-item">
-              <a href="resume.html" class="nav-link text-light">Resume</a>
+              <a href="resume.html" class="nav-link text-light border-bottom border-2 border-white">Resume</a>
             </li>
             <li class="nav-item">
               <a href="coursework.html" class="nav-link text-light">Cousework</a>
@@ -54,5 +56,28 @@
       </div>
     </nav>
   </header>
+  <main>
+    <div class="resume-jumbotron"></div>
+    <div class="container text-light my-5">
+      <div class="row">
+        <div class="col-3">
+          <h1 class="bebas-neue-regular display-1 text-end">My Resume</h1>
+        </div>
+        <div class="col-6">
+          <p class="quicksand-text fs-3">St. Louis based Front-End Web Developer, graduate from Ranken Technical College with experience HTML, CSS, and Bootstrap. Skills such as data management, communication skills, management experience, and more help to develop creative, yet functional web solutions.</p>
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-evenly align-items-center text-center bebas-neue-regular">
+          <a href="images/resume.pdf" target="_blank" class="p-2 fs-4 text-dark border border-2 border-white bg-light w-100">
+            <i class="fa-solid fa-magnifying-glass px-1"></i>
+            View Resume
+          </a>
+          <a href="images/resume.pdf" download class="p-2 fs-4 text-dark border border-2 border-white bg-light w-100">
+            <i class="fa-solid fa-file-arrow-down px-1"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
