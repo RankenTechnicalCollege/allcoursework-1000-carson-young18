@@ -1,0 +1,15 @@
+.home-jumbotron{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/jumbo.webp);
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.home-jumbotron h1{
+  text-shadow: 2px 2px lightblue;
+}
+
+.home-jumbotron a{
+  text-shadow: 1px 1px lightyellow;
+}
