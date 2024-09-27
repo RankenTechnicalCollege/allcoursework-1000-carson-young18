@@ -79,3 +79,24 @@ nav li{
   height: 40vh;
   background-color: grey;
 }
+
+.overlay-text{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-img-overlay{
+  transition: background 0.5s;
+}
+
+.card-img-overlay:hover > .overlay-text{
+  opacity: 1;
+}
+
+.ctc:hover{
+  background: rgba(3, 2, 243, 0.7);
+}
+
+.formFooter{
+  opacity: 0 !important;
+}

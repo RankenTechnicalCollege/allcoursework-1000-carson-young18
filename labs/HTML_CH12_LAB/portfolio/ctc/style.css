@@ -1,0 +1,95 @@
+/* LOGO COLOR #0302F3 */
+main{
+  min-height: 90vh;
+}
+
+footer{
+  min-height: 10vh;
+}
+
+.navbar{
+  background-color: lightgrey;
+}
+
+.nav-spacer{
+  height: 66px;
+}
+
+footer{
+  background-color: darkgray;
+}
+
+a{
+  text-decoration: none;
+  color: #0302F3;
+}
+
+.btn{
+  background-color: #0302F3 !important;
+}
+
+.page-header{
+  width: 30%;
+  text-align: center;
+  border-image: linear-gradient(to right, white, #0302F3 20%, #0302F3 80%, white 100%) 1;
+}
+
+.home-jumbotron{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/ctc_raffle_basket_winner.jpg);
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: white;
+}
+
+.page-jumbotron{
+  height: 20vh;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home-cards{
+  height: 100%;
+  flex-basis: 60%;
+}
+
+#home-carousel{
+  flex-basis: 40%;
+}
+
+.carousel-item{
+  max-height: 100%;
+}
+
+.contact-logo{
+  flex-basis: 30%;
+}
+
+.contact-text{
+  flex-basis: 70%;
+}
+
+.gallery-images img{
+  height: 30%;
+  width: 30%;
+  margin: 5px;
+}
+
+.calendar{
+  flex-basis: 70%;
+}
+
+.calendar-text{
+  flex-basis: 30%;
+}
+
+@media (max-width:500px) {
+  .navbar-brand h1{
+    display: none;
+  }
+}
