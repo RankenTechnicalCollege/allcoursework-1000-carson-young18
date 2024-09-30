@@ -1,0 +1,17 @@
+.jumbo-home{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/jumbo.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-shadow: 2px 2px 5px black;
+}
+
+.jumbo-products{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/jumbo2.jpeg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  text-shadow: 2px 2px 5px black;
+}
