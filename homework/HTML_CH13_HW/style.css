@@ -1,0 +1,9 @@
+body{
+  width: 30%;
+}
+
+form{
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 3px;
+}

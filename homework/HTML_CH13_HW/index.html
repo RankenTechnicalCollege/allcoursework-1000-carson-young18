@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Chapter 13</title>
+</head>
+<body>
+  <h1>Music Survey</h1>
+  <form action="#" method="post" id="music-form">
+    <p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name">
+    </p>
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" name="" id="email">
+    </p>
+    <fieldset>
+      <legend>Select Your Favorite Types of Music:</legend>
+      <input type="checkbox" name="type1" id="type1" value="pop">
+      <label for="type1">Pop</label><br>
+      <input type="checkbox" name="type2" id="type2" value="classical">
+      <label for="type2">Classical</label><br>
+      <input type="checkbox" name="type3" id="type3" value="rock">
+      <label for="type3">Rock</label><br>
+      <input type="checkbox" name="type4" id="type4" value="folk">
+      <label for="type4">Folk</label><br>
+      <input type="checkbox" name="type5" id="type5" value="rap">
+      <label for="type5">Rap</label><br>
+      <input type="checkbox" name="type6" id="type6" value="other">
+      <label for="type6">Other</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Select how often you purchase Music CDs:</legend>
+      <input type="radio" name="often" id="week" value="week">
+      <label for="week">Weekly</label><br>
+      <input type="radio" name="often" id="year" value="year">
+      <label for="year">A few CDs each year</label><br>
+      <input type="radio" name="often" id="month" value="month">
+      <label for="month">Monthly</label><br>
+      <input type="radio" name="often" id="never" value="never">
+      <label for="never">Never purchase</label><br>
+    </fieldset>
+    <p>
+      <label for="location">Select the locations you listen to Music:</label><br>
+      <select name="location" id="location" size="3">
+        <option value="home">At home</option>
+        <option value="car">In the car</option>
+        <option value="anywhere">Anywhere (MP3) Player</option>
+        <option value="concert">At a concert</option>
+      </select>
+    </p>
+    <p>
+      <label for="role">What role does music play in your life?</label><br>
+      <textarea name="role" id="role" cols="60" rows="3"></textarea>
+    </p>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+  <footer>
+    <p>Carson Young | <a href="mailto:Carson_Young@insideranken.org">Carson_Young@insideranken.org</a></p>
+  </footer>
+</body>
+</html>
