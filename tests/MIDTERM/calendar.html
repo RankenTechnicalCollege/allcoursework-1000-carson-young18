@@ -57,25 +57,31 @@
   </header>
   <main>
     <!-- Header spacer and heading text for every page except the home page -->
-    <div class="container-fluid nav-spacer"></div>
+    <div class=" nav-spacer"></div>
     <div class="container-fluid page-jumbotron d-flex flex-column justify-content-center align-items-center my-4">
       <h1 class="page-header fw-bold display-5 border-bottom border-3">Calendar</h1>
     </div>
-    <div class="container d-flex">
-      <iframe 
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&title=Connecting%20Through%20Charity&src=YWU2YmEyODBlNTU4MWRiOGY5YjliYTliNjllZjIwNjQyOWFlNGQ1MzI5NzNjYjZhODllMThlMDJkZjdlZTU3MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" 
-        width="800" 
-        height="600" 
-        title="calendar"
-        class="calendar m-3">
-      </iframe>
-      <div class="container calendar-text align-items-center justify-content-center">
-        <h3 class="border-bottom border-3 text-center">Events</h3>
-        <p class="fs-3 m-3">Add our
-        <a target="_blank" href="https://calendar.google.com/calendar/u/1?cid=YWU2YmEyODBlNTU4MWRiOGY5YjliYTliNjllZjIwNjQyOWFlNGQ1MzI5NzNjYjZhODllMThlMDJkZjdlZTU3MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-          Google Calendar
-        </a>
-        and enable notifications to stay up to date on the latest Connecting Through Charity events!</p>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col col-lg-8 order-2 order-lg-1">
+          <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&title=Connecting%20Through%20Charity&src=YWU2YmEyODBlNTU4MWRiOGY5YjliYTliNjllZjIwNjQyOWFlNGQ1MzI5NzNjYjZhODllMThlMDJkZjdlZTU3MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"  
+            title="calendar"
+            height="600"
+            width="800"
+            class="calendar m-3 mw-100 mh-100">
+          </iframe>
+        </div>
+        <div class="col col-lg-4 order-1 order-lg-2">
+          <div class="container-fluid calendar-text align-items-center justify-content-center">
+            <h3 class="border-bottom border-3 text-center">Events</h3>
+            <p class="fs-3 m-3">Add our
+            <a target="_blank" href="https://calendar.google.com/calendar/u/1?cid=YWU2YmEyODBlNTU4MWRiOGY5YjliYTliNjllZjIwNjQyOWFlNGQ1MzI5NzNjYjZhODllMThlMDJkZjdlZTU3MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+              Google Calendar
+            </a>
+            and enable notifications to stay up to date on the latest Connecting Through Charity events!</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
