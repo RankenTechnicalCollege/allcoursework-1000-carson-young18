@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>Bootstrap HOT 2</title>
+</head>
+<body>
+  <!-- Columns -->
+  <div class="container-fluid mb-5">
+    <div class="row row-cols-1 row-cols-md-5 justify-content-evenly">
+      <div class="col row-cols-md-2">
+        <div class="accordion" id="accordionTest">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="collapseOne" data-bs-parent="accordionTest">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt. Mauris dapibus augue eget lacus interdum interdum. In hac habitasse platea dictumst. Curabitur ullamcorper sit amet ante eu facilisis. Fusce id ornare sem. Suspendisse rutrum sem nibh, eget pulvinar lorem consectetur id. Nullam a eleifend ante.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="collapseTwo" data-bs-parent="accordionTest">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt. Mauris dapibus augue eget lacus interdum interdum. In hac habitasse platea dictumst. Curabitur ullamcorper sit amet ante eu facilisis. Fusce id ornare sem. Suspendisse rutrum sem nibh, eget pulvinar lorem consectetur id. Nullam a eleifend ante.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="collapseThree" data-bs-parent="accordionTest">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt. Mauris dapibus augue eget lacus interdum interdum. In hac habitasse platea dictumst. Curabitur ullamcorper sit amet ante eu facilisis. Fusce id ornare sem. Suspendisse rutrum sem nibh, eget pulvinar lorem consectetur id. Nullam a eleifend ante.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col row-cols-md-2">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            List item #1
+            <span class="badge text-bg-secondary rounded-pill">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            List item #2
+            <span class="badge text-bg-secondary rounded-pill">6</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            List item #3
+            <span class="badge text-bg-secondary rounded-pill">1</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            List item #4
+            <span class="badge text-bg-secondary rounded-pill">11</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            List item #5
+            <span class="badge text-bg-secondary rounded-pill">7</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col row-cols-md-2">
+        <img src="images/steak.webp" alt="A Steak" class="img-fluid">
+      </div>
+      <div class="col row-cols-md-2">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalTest">
+          Show Modal
+        </button>
+        <div class="modal fade" id="modalTest" tabindex="-1" aria-labelledby="modalTestLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="modalTestLabel">Modal Heading</h1>
+                <button type="button" tabindex="-1" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt. Mauris dapibus augue eget lacus interdum interdum. In hac habitasse platea dictumst. Curabitur ullamcorper sit amet ante eu facilisis. Fusce id ornare sem. Suspendisse rutrum sem nibh, eget pulvinar lorem consectetur id. Nullam a eleifend ante.
+              </div>
+              <div class="modal-footer">
+                <button type="button" tabindex="-1" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col row-cols-md-2">
+        <span class="h4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt. Mauris dapibus augue eget lacus interdum interdum. In hac habitasse platea dictumst. Curabitur ullamcorper sit amet ante eu facilisis. Fusce id ornare sem. Suspendisse rutrum sem nibh, eget pulvinar lorem consectetur id. Nullam a eleifend ante.
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+  <div class="container w-50 mb-5">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel1.jpeg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel2.jpeg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel3.jpeg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Custom Cards -->
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col col-md-4">
+        <div class="card text-bg-dark">
+          <img src="images/carousel1.jpeg" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5>Card Title #1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="card text-bg-dark">
+          <img src="images/carousel2.jpeg" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5>Card Title #2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="card text-bg-dark">
+          <img src="images/carousel3.jpeg" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5>Card Title #3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis commodo ipsum. Curabitur convallis orci vel sapien molestie tincidunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Icon Grid -->
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="col col-md-6 col-lg-3 d-flex align-items-start">
+        <img src="images/icon1.png" alt="" class="w-25">
+        <div>
+          <h5>Icon Heading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-3 d-flex align-items-start">
+        <img src="images/icon4.png" alt="" class="w-25">
+        <div>
+          <h5>Icon Heading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-3 d-flex align-items-start">
+        <img src="images/icon2.png" alt="" class="w-25">
+        <div>
+          <h5>Icon Heading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-3 d-flex align-items-start">
+        <img src="images/icon3.png" alt="" class="w-25">
+        <div>
+          <h5>Icon Heading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Form -->
+  <div class="container mb-5">
+    <form>
+      <div>
+        <label for="usernameTest" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="usernameTest">
+      </div>
+      <div>
+        <label for="passwordTest" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="passwordTest">
+      </div>
+      <button type="submit" class="btn btn-secondary">Log In</button>
+    </form>
+  </div>
+  <footer>
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col col-md-4">
+          &copy; 2024 Company, Inc
+        </div>
+        <div class="col col-md-4">
+          <img src="images/bs-logo.jpg" alt="Bootstrap Logo" height="20" width="20">
+        </div>
+        <div class="col col-md-4">
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQs</a>
+            <a href="#">About</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
