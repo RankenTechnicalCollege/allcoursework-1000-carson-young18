@@ -8,24 +8,27 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Order Form</h1>
-  <form class="w-25">
-    <div>
-      <label for="burgers" class="form-label">Burgers:</label>
-      <input type="number" name="burgers" id="burgers" class="form-control" value="1">
-    </div>
-    <div>
-      <label for="burgers" class="form-label">Fries:</label>
-      <input type="number" name="fries" id="fries" class="form-control" value="1">
-    </div>
-    <div>
-      <label for="burgers" class="form-label">Sodas:</label>
-      <input type="number" name="sodas" id="sodas" class="form-control" value="1">
-    </div>
-    <button type="button" id="btnClick" class="btn btn-primary">Total</button>
-  </form>
-  <h2 class="display-3" id="total">Your total is: $0.00</h2>
-
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="display-2">Order Form</h1>
+    <form class="w-25">
+      <div>
+        <label for="burgers" class="form-label">Burgers:</label>
+        <input type="number" name="burgers" id="burgers" class="form-control mb-3" value="1" min="0">
+      </div>
+      <div>
+        <label for="burgers" class="form-label">Fries:</label>
+        <input type="number" name="fries" id="fries" class="form-control mb-3" value="1" min="0">
+      </div>
+      <div>
+        <label for="burgers" class="form-label">Sodas:</label>
+        <input type="number" name="sodas" id="sodas" class="form-control mb-3" value="1" min="0">
+      </div>
+      <button type="button" id="btnClick" class="btn btn-primary w-100 mb-3">Total</button>
+      <button type="submit" hidden></button>
+    </form>
+    <h2 class="display-4" id="total">Your total is: $0.00</h2>
+  </div>
+  <!-- Scripts -->
   <script>
     document.getElementById('btnClick').onclick = () => {
       const bCost = 1.00;
@@ -33,17 +36,12 @@
       const sCost = 2.50;
 
       const burgers = document.getElementById("burgers").value;
-      console.log(burgers)
       const fries = document.getElementById("fries").value;
       const sodas = document.getElementById("sodas").value;
 
-      var total = 0.00;
-      total += (parseInt(burgers) * bCost);
-      total += (parseInt(fries) * fCost);
-      total += (parseInt(sodas) * sCost);
+      let total = ((burgers * bCost) + (fries * fCost) + (sodas * sCost));
 
-      const totalString = 'Your total is: ${total}';
-      document.getElementById("total").innerHTML = totalString;
+      document.getElementById("total").innerHTML = `Your total is: $${total.toFixed(2)}`;
     }
   </script>
 </body>
