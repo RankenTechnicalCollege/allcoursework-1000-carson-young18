@@ -1,21 +1,19 @@
-const apiKey = "8222dd8393ed41969cc978be1b236d73";
-const base = "https://www.bungie.net/Platform";
+var totalMonths  = "13";
 
-const guardianLookup = () => {
-  const data = {
-    'displayName': document.getElementById('summoner').value,
-    'displayNameCode': document.getElementById('tagline').value
-  }
-  const path = "/Destiny2/SearchDestinyPlayerByBungieName/-1/";
-  const requestOptions ={
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json',
-      'X-API-Key': apiKey
-    },
-    body: data
-  }
+var years = parseInt ( totalMonths / 12 );
 
-  fetch(base + path, requestOptions)
-    .then(data => {console.log(data);})
-};
+var months = totalMonths % 12;
+
+if ( years == 0 ) {
+
+    alert ( months + " months.");
+
+} else if ( months == 0 ) {
+
+    alert ( years + " years");
+
+} else {
+
+    alert ( years + " years, and " + months + " months.");
+
+}
