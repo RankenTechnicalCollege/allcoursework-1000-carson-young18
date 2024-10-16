@@ -24,33 +24,41 @@
             <img src="images/ctclogo.png" alt="CTC Logo" height="50" width="50">
           </a>
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="merriweather-regular fs-3 m-0">Connecting Through Charity</h1>
+            <h1 class="name1 merriweather-regular fs-3 m-0">Connecting Through Charity</h1>
+            <h1 class="name2 merriweather-regular fs-1 m-0">CTC</h1>
           </a>
         </div>
         <!-- Links with collapse -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end fs-6" id="navbarToggler">
-          <ul class="navbar-nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendar.html">Calendar</a>
-            </li>
-            <!-- Donate now button -->
-            <li class="nav-item">
-              <a href="donations.html" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3 donate-btn">Donate Now</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Connecting Through Charity</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body justify-content-end text-center">
+            <ul class="navbar-nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+              </li>
+              <!-- Donate now button -->
+              <li class="nav-item">
+                <a href="donations.html" class="donate-btn btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Donate Now</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- <div class="collapse navbar-collapse justify-content-end fs-6 text-center" id="navbarToggler"> -->
       </div>
     </nav>
   <!-- Navbar end -->
