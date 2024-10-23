@@ -15,6 +15,7 @@ const focusAndSelect = selector => {
 }
 
 const clearEntries = () => {
+  document.getElementById("mpgForm").reset();
   focusAndSelect("#miles");
 }
 

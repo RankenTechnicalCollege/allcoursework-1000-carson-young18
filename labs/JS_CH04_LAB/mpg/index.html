@@ -9,30 +9,33 @@
   <main>
     <h1>The Miles Per Gallon Calculator</h1>
 
-    <div>
-      <label for="miles">Miles Driven:</label>
-      <input type="text" name="miles" id="miles">
-    </div>
+    <form id="mpgForm">
+      <div>
+        <label for="miles">Miles Driven:</label>
+        <input type="text" name="miles" id="miles">
+      </div>
 
-    <div>
-      <label for="miles">Gallons of Gas Used:</label>
-      <input type="text" name="gallons" id="gallons">
-    </div>
+      <div>
+        <label for="miles">Gallons of Gas Used:</label>
+        <input type="text" name="gallons" id="gallons">
+      </div>
 
-    <div>
-      <label for="miles">Miles Per Gallon:</label>
-      <input type="text" name="mpg" id="mpg" disabled>
-    </div>
+      <div>
+        <label for="miles">Miles Per Gallon:</label>
+        <input type="text" name="mpg" id="mpg" disabled>
+      </div>
 
-    <div>
-      <label>&nbsp;</label>
-      <input type="button" id="calculate" value="Calculate MPG">
-    </div>
+      <div>
+        <label>&nbsp;</label>
+        <button type="button" id="calculate">Calculate MPG</button>
+      </div>
 
-    <div>
-      <label>&nbsp;</label>
-      <input type="button" id="clear" value="Clear Entries">
-    </div>
+      <div>
+        <label>&nbsp;</label>
+        <button type="button" id="clear">Clear Entries</button>
+      </div>
+      <button type="submit" hidden></button>
+    </form>
   </main>
   <script src="mpg.js"></script>
 </body>
