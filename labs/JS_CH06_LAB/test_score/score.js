@@ -47,7 +47,7 @@ const displayResults = () => {
 const displayScores = () => {
   const nodes = $("#scores-text div").childNodes;
   console.log(nodes);
-  for (let node of $("#scores-text div").childNodes){
+  for (let node of nodes){
     $("#scores-text div").removeChild(node);
   }
   for (let score of scores){
