@@ -22,6 +22,7 @@ const addScore = () => {
     scores.push([name, score]);
     console.log(scores);
   }
+  $("#name").focus();
 }
 
 const displayResults = () => {
@@ -45,11 +46,6 @@ const displayResults = () => {
 }
 
 const displayScores = () => {
-  const nodes = $("#scores-text div").childNodes;
-  console.log(nodes);
-  for (let node of nodes){
-    $("#scores-text div").removeChild(node);
-  }
   for (let score of scores){
     const newScore = document.createElement("p");
     const scoreText = document.createTextNode(`${score[0]}  ${score[1]}`);
