@@ -1,0 +1,7 @@
+.collapsed{
+  display: none;
+}
+
+.expanded{
+  display: initial;
+}
