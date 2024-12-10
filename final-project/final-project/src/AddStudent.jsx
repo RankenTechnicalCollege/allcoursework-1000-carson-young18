@@ -14,7 +14,7 @@ const AddStudent = (props) => {
       'firstName' : firstName,
       'lastName' : lastName,
       'email' : email,
-      'gradYear' : gradYear,
+      'gradYear' : parseInt(gradYear),
       'image' : URL.createObjectURL(selectedFile)
     }
 
@@ -80,7 +80,7 @@ const AddStudent = (props) => {
         <input type="file" name="fileUpload" id="fileUpload" className='form-control' onChange={imageUpdate}/>
       </div>
       <div className='col-md-4'>
-        <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}/>
+        <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Student</button>
       </div>
       
     </div>
