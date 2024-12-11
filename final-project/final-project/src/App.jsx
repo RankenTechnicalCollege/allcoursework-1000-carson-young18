@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { nanoid } from 'nanoid'
-import AddStudent from './AddStudent';
-import _ from 'lodash';
-import Student from './Student'
+import AddStudent from './components/AddStudent';
+import _, { update } from 'lodash';
+import Student from './components/Student'
 
 function App() {
 
@@ -14,6 +14,16 @@ function App() {
   const [gradYear, setGradYear] = useState('')
 
   useEffect(() => {
+    if(localStorage){
+      const studentsLocalStorage = JSON.parse(localStorage.getItem('students'));
+
+      if(studentsLocalStorage){
+        saveStudents(studentsLocalStorage);
+      }
+      else{
+        saveStudents(students);
+      }
+    }
     saveStudents(students);
   }, []);
 
@@ -93,6 +103,10 @@ function App() {
   const saveStudents = (students) => {
     setAllStudents(students);
     setSearchResults(students);
+    if(localStorage){
+      localStorage.setItem('students', JSON.stringify(students));
+      console.log('saved to local storage');
+    }
   }
 
   const addStudent = (newStudent) => {
@@ -101,7 +115,15 @@ function App() {
   }
 
   const removeStudent = (studentToDelete) => {
-    console.table(studentToDelete);
+    // console.table(studentToDelete);
+    const updatedStudentArray = allStudents.filter(student => student.id !== studentToDelete.id);
+    saveStudents(updatedStudentArray);
+  }
+
+  const updateStudent = (updatedStudent) => { 
+    // console.table(updatedStudent)
+    const updatedStudentArray = allStudents.map(student => student.id === updatedStudent.id ? {...student, ...updatedStudent} : student)
+    saveStudents(updatedStudentArray);
   }
 
   const searchStudents = () => {
@@ -137,15 +159,7 @@ function App() {
       <div className='row'>
         {searchResults && searchResults.map((student) => (
           <div className='col-lg-2' key={student.id}>
-            <div className='card'>
-              <img src={student.image} alt="Our student" className='card-image-top mx-auto'/>
-              <ul className='list-group list-group-flush'>
-                <li className='list-group-item text-center'>{student.firstName}</li>
-                <li className='list-group-item text-center'>{student.lastName}</li>
-                <li className='list-group-item text-center'>{student.email}</li>
-                <li className='list-group-item text-center'>{student.gradYear}</li>
-              </ul>
-            </div>
+            <Student student={student} removeStudent={removeStudent} updateStudent={updateStudent}/>
           </div>
         ))}
 
