@@ -3,8 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { nanoid } from 'nanoid'
 import AddStudent from './components/AddStudent';
-import _, { update } from 'lodash';
+import _ from 'lodash';
 import Student from './components/Student'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
 
@@ -156,7 +159,8 @@ function App() {
 
   return (
     <div className='container'>
-      <div className='row'>
+      <div className='row' id='allStudents'>
+        <h3>Current Students</h3>
         {searchResults && searchResults.map((student) => (
           <div className='col-lg-2' key={student.id}>
             <Student student={student} removeStudent={removeStudent} updateStudent={updateStudent}/>
@@ -168,19 +172,21 @@ function App() {
       {/* {!allStudents && <button type='button' className='btn btn-large btn-success' onClick={() => setAllStudents(students)}>Save Students</button>} */}
     
       <AddStudent addStudent={addStudent}/>
-      <div className='row mt-4'>
+      <div className='row mt-4' id='searchStudents'>
+        <h3>Search Students</h3>
         <div className='col-md-4'>
           <label htmlFor="txtKeywords">Search by First or Last Name</label>
           <input type="text" className='form-control' placeholder='Search First or Last Name' id='txtKeywords' name='txtKeywords' onChange={e => setKeywords(e.currentTarget.value)} value={keywords}/>
         </div>
         <div className='col-md-4'>
+          <label htmlFor="select">Search by Grad Year</label>
           <select className='form-select' value={gradYear} onChange={e => setGradYear(e.currentTarget.value)}>
             <option value="">Select Year</option>
             {_(allStudents).map(student => student.gradYear).sort().uniq().map(year => <option key={year} value={year}>{year}</option>).value()}
           </select>
         </div>
-        <div className='col-md-4'>
-          <button type='button' className='btn btn-lg btn-primary' onClick={searchStudents}>Search Students</button>
+        <div className='col-md-4 mt-3'>
+          <button type='button' className='btn btn-lg btn-primary' onClick={searchStudents}>Search Students <FontAwesomeIcon icon={faSearch}/></button>
         </div>
       </div>
     </div>

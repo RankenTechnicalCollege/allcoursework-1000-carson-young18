@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 import { nanoid } from 'nanoid';
-import React, {useState} from 'react'
+import {useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import './AddStudent.css'
 
 const AddStudent = (props) => {
   const [firstName, setFirstName] = useState('');
@@ -27,7 +30,8 @@ const AddStudent = (props) => {
   }
 
   return (
-    <div className='row'>
+    <div className='row mt-5' id='addStudent'>
+      <h3>Add Student</h3>
       <div className='col-md-2'>
         <label htmlFor="txtFirstName" className='form-label'>First Name</label>
         <input 
@@ -81,9 +85,8 @@ const AddStudent = (props) => {
         <input type="file" name="fileUpload" id="fileUpload" className='form-control' onChange={imageUpdate}/>
       </div>
       <div className='col-md-4'>
-        <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Student</button>
+        <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Student <FontAwesomeIcon icon={faPlusCircle}/></button>
       </div>
-      
     </div>
   )
 }
