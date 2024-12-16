@@ -29,6 +29,16 @@ const AddWeapon = (props) => {
       'weaponClass' : weaponClass,
       'frame' : frame,
       'impact' : impact,
+      'range' : range,
+      'stability' : stability,
+      'handling' : handling,
+      'reloadSpeed' : reloadSpeed,
+      'aimAssist' : aimAssist,
+      'zoom' : zoom,
+      'airEffect' : airEffect,
+      'rpm' : rpm,
+      'mag' : mag,
+      'recoil' : recoil,
       'image' : URL.createObjectURL(selectedFile)
     }
 
@@ -43,7 +53,7 @@ const AddWeapon = (props) => {
     <div className='container mt-5' id='addWeapon'>
       <h3>Add Weapon</h3>
       <div className='row'>
-        <div className='col-md-2'>
+        <div className='col-md-3'>
           <label htmlFor="txtName" className='form-label'>Name</label>
           <input 
             type="text" 
@@ -55,19 +65,32 @@ const AddWeapon = (props) => {
             value={name}
           />
         </div>
-        <div className='col-md-2'>
+        <div className='col-md-3'>
           <label htmlFor="txtWeaponClass" className='form-label'>Weapon Class</label>
-          <input 
-            type="text" 
-            name="txtWeaponClass" 
-            id="txtWeaponClass" 
-            placeholder='Weapon Class' 
-            className='form-control'
+          <select name="txtWeaponClass" id="txtWeaponClass" className='form-select'
             onChange={(event) => setWeaponClass(event.currentTarget.value)} 
-            value={weaponClass}
-          />
+            value={weaponClass}>
+            <option value="">Choose class</option>
+            <option value="Auto Rifle">Auto Rifle</option>
+            <option value="Combat Bow">Combat Bow</option>
+            <option value="Fusion Rifle">Fusion Rifle</option>
+            <option value="Glaive">Glaive</option>
+            <option value="Grenade Launcher">Grenade Launcher</option>
+            <option value="Hand Cannon">Hand Cannon</option>
+            <option value="Linear Fusion Rifle">Linear Fusion Rifle</option>
+            <option value="Machine Gun">Machine Gun</option>
+            <option value="Pulse Rifle">Pulse Rifle</option>
+            <option value="Rocket Launcher">Rocket Launcher</option>
+            <option value="Scout Rifle">Scout Rifle</option>
+            <option value="Shotgun">Shotgun</option>
+            <option value="Sidearm">Sidearm</option>
+            <option value="Sniper Rifle">Sniper Rifle</option>
+            <option value="Submachine Gun">Submachine Gun</option>
+            <option value="Sword">Sword</option>
+            <option value="Trace Rifle">Trace Rifle</option>
+          </select>
         </div>
-        <div className='col-md-2'>
+        <div className='col-md-3'>
           <label htmlFor="txtFrame" className='form-label'>Frame</label>
           <input 
             type="text" 
@@ -79,7 +102,7 @@ const AddWeapon = (props) => {
             value={frame}
           />
         </div>
-        <div className='col-md-2'>
+        <div className='col-md-3'>
           <label htmlFor="numImpact" className='form-label'>Impact</label>
           <input 
             type="number" 
@@ -91,7 +114,9 @@ const AddWeapon = (props) => {
             value={impact}
           />
         </div>
-        <div className='col-md-2'>
+      </div>
+      <div className='row'>
+        <div className='col-md-3'>
           <label htmlFor="numRange" className='form-label'>Range</label>
           <input 
             type="number" 
@@ -103,79 +128,124 @@ const AddWeapon = (props) => {
             value={range}
           />
         </div>
-      </div>
-      <div className='row'>
-      <div className='col-md-2'>
-          <label htmlFor="txtName" className='form-label'>Name</label>
+        <div className='col-md-3'>
+          <label htmlFor="numStability" className='form-label'>Stability</label>
           <input 
-            type="text" 
-            name="txtName" 
-            id="txtName" 
-            placeholder='Name' 
+            type="number" 
+            name="numStability" 
+            id="numStability" 
+            placeholder='Stability' 
             className='form-control' 
-            onChange={(event) => setName(event.currentTarget.value)} 
-            value={name}
+            onChange={(event) => setStability(event.currentTarget.value)} 
+            value={stability}
           />
         </div>
-        <div className='col-md-2'>
-          <label htmlFor="txtWeaponClass" className='form-label'>Weapon Class</label>
-          <input 
-            type="text" 
-            name="txtWeaponClass" 
-            id="txtWeaponClass" 
-            placeholder='Weapon Class' 
-            className='form-control'
-            onChange={(event) => setWeaponClass(event.currentTarget.value)} 
-            value={weaponClass}
-          />
-        </div>
-        <div className='col-md-2'>
-          <label htmlFor="txtFrame" className='form-label'>Frame</label>
-          <input 
-            type="text" 
-            name="txtFrame" 
-            id="txtFrame" 
-            placeholder='Frame' 
-            className='form-control'
-            onChange={(event) => setFrame(event.currentTarget.value)} 
-            value={frame}
-          />
-        </div>
-        <div className='col-md-2'>
-          <label htmlFor="numImpact" className='form-label'>Impact</label>
+        <div className='col-md-3'>
+          <label htmlFor="numHandling" className='form-label'>Handling</label>
           <input 
             type="number" 
-            name="numImpact" 
-            id="numImpact" 
-            placeholder='Impact' 
+            name="numHandling" 
+            id="numHandling" 
+            placeholder='Handling' 
             className='form-control'
-            onChange={(event) => setImpact(event.currentTarget.value)} 
-            value={impact}
+            onChange={(event) => setHandling(event.currentTarget.value)} 
+            value={handling}
           />
         </div>
-        <div className='col-md-2'>
-          <label htmlFor="numRange" className='form-label'>Range</label>
+        <div className='col-md-3'>
+          <label htmlFor="numReloadSpeed" className='form-label'>Reload Speed</label>
           <input 
             type="number" 
-            name="numRange" 
-            id="numRange" 
-            placeholder='Range' 
+            name="numReloadSpeed" 
+            id="numReloadSpeed" 
+            placeholder='Reload Speed' 
             className='form-control'
-            onChange={(event) => setRange(event.currentTarget.value)} 
-            value={range}
+            onChange={(event) => setReloadSpeed(event.currentTarget.value)} 
+            value={reloadSpeed}
           />
         </div>
       </div>
       <div className='row'>
-
-      </div>
-      <div className='col-md-4'>
-        <div className='col-md-2'>
-          <label htmlFor="fileUpload" className='form-label'>Student Image</label>
-          <input type="file" name="fileUpload" id="fileUpload" className='form-control' onChange={imageUpdate}/>
+        <div className='col-md-3'>
+          <label htmlFor="numAimAssist" className='form-label'>Aim Assist</label>
+          <input 
+            type="number" 
+            name="numAimAssist" 
+            id="numAimAssist" 
+            placeholder='Aim Assist' 
+            className='form-control'
+            onChange={(event) => setAimAssist(event.currentTarget.value)} 
+            value={aimAssist}
+          />
         </div>
-        <button type="button" className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Weapon <FontAwesomeIcon icon={faPlusCircle}/></button>
+        <div className='col-md-3'>
+          <label htmlFor="numZoom" className='form-label'>Zoom</label>
+          <input 
+            type="number" 
+            name="numZoom" 
+            id="numZoom" 
+            placeholder='Zoom' 
+            className='form-control'
+            onChange={(event) => setZoom(event.currentTarget.value)} 
+            value={zoom}
+          />
+        </div>
+        <div className='col-md-3'>
+          <label htmlFor="numAirEffect" className='form-label'>Air Effectiveness</label>
+          <input 
+            type="number" 
+            name="numAirEffect" 
+            id="numAirEffect" 
+            placeholder='Air Effectiveness' 
+            className='form-control' 
+            onChange={(event) => setAirEffect(event.currentTarget.value)} 
+            value={airEffect}
+          />
+        </div>
+        <div className='col-md-3'>
+          <label htmlFor="numRPM" className='form-label'>RPM</label>
+          <input 
+            type="number" 
+            name="numRPM" 
+            id="numRPM" 
+            placeholder='RPM' 
+            className='form-control'
+            onChange={(event) => setRPM(event.currentTarget.value)} 
+            value={rpm}
+          />
+        </div>
       </div>
+      <div className='row'>
+        <div className='col-md-3'>
+          <label htmlFor="numMag" className='form-label'>Mag Size</label>
+          <input 
+            type="number" 
+            name="numMag" 
+            id="numMag" 
+            placeholder='Mag Size' 
+            className='form-control'
+            onChange={(event) => setMag(event.currentTarget.value)} 
+            value={mag}
+          />
+        </div>
+        <div className='col-md-3'>
+          <label htmlFor="numRecoil" className='form-label'>Recoil</label>
+          <input 
+            type="number" 
+            name="numRecoil" 
+            id="numRecoil" 
+            placeholder='Recoil' 
+            className='form-control'
+            onChange={(event) => setRecoil(event.currentTarget.value)} 
+            value={recoil}
+          />
+        </div>
+        <div className='col-md-6'>
+          <label htmlFor="fileUpload" className='form-label'>Weapon Image</label>
+          <input type="file" name="fileUpload" id="fileUpload" className='form-control w-100' onChange={imageUpdate}/>
+        </div>
+      </div>
+      <button type="button" className='btn btn-success btn-lg mt-4' id='btnAdd' onClick={doWork}>Add Weapon <FontAwesomeIcon icon={faPlusCircle}/></button>
     </div>
   )
 }
