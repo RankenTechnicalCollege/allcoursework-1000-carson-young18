@@ -66,8 +66,8 @@ const Weapon = (props) => {
       <img src={props.weapon.image} alt="weapon" className='card-image-top mx-auto w-100'/>
       {!editMode && 
         <ul className='list-group list-group-flush'>
-          <li className='list-group-item text-center fs-1'>{props.weapon.name}</li>
-          <li className='list-group-item text-center fs-3'>{props.weapon.weaponClass}</li>
+          <li className='list-group-item text-center fs-2'>{props.weapon.name}</li>
+          <li className='list-group-item text-center fs-4'>{props.weapon.weaponClass}</li>
           <li className='list-group-item text-center'>{props.weapon.frame}</li>
           <li className='list-group-item text-center'>Impact: {props.weapon.impact}</li>
           <li className='list-group-item text-center'>Range: {props.weapon.range}</li>
