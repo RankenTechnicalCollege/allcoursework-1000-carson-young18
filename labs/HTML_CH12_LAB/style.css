@@ -99,6 +99,10 @@ nav li{
   background: rgba(3, 2, 243, 0.7);
 }
 
+.dwl:hover{
+  background: rgba(46, 46, 51, 0.7);
+}
+
 .formFooter{
   opacity: 0 !important;
 }
